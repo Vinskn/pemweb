@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
 </head>
 <body>
-    <div style="text-align: center;">
-        <h1>Welcome</h1>
-        <h3>Please Login</h3>
-        <form action="/pemweb/bio.html">
-            <table style="margin-left: 50%; transform: translateX(-50%);">
-                <tr>
-                    <td>Username </td>
-                    <td>: </td>
-                    <td><input type="text" required></td>
-                </tr>
-                <tr>
-                    <td>Password </td>
-                    <td>: </td>
-                    <td><input type="password" required></td>
-                </tr>
-            </table>
-           <button type="submit">Login</button>
-            <p style="font-size: smaller; text-align: center;">Dont Have account? <a href="/pemweb/regist.html">Register here</a></p>
-        </form>
-        
+    <div class="container">
+        <div class="insideContainer">
+            <label id="title" for="title">Welcome Back</label><br>
+            <label id="opener" for="title">Please Enter Your Details</label>
+            <form action="/pemweb/bio.html" class="form">
+                <div class="field">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="password" required>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" >
+                        <label for="checkbox">Remember Me</label>
+                    </div>
+                </div>
+               <button type="submit">Login</button>
+                <p>Don't Have account? <a href="/pemweb/regist.html" id="toRegist">Register here</a></p>
+            </form>
+        </div>
     </div>
 </body>
 </html>

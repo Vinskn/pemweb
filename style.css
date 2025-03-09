@@ -1,0 +1,96 @@
+body{
+    background-image: repeating-linear-gradient(to bottom right, #402E7A, #3DC2EC);
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgba(74, 112, 245, 0.5), rgba(76, 59, 207));
+    border: solid 0.5px lightskyblue;
+    width: 30%;
+    height: 75vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: white;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+}
+#opener {
+    font-size: 15px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.field input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.checkbox{
+    text-align: left;
+    font-size: small;
+}
+
+.form button {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    border: none;
+}
+.form button:hover{
+    background-color: #3DC2EC;
+}
+
+#toRegist{
+    color: cyan;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.inside{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.main1{
+    width: 60%;
+}
+.main1 p{
+    text-align: justify;
+}
+.main2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#logout button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px;
+    font-weight: bolder;
+}
+#logout button:hover{
+    background-color: crimson;
+}

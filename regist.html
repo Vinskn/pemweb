@@ -4,42 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="text-align: center;">
-        <h1>Hello</h1>
+    <div class="container">
+        <div class="innerContainer">
+            <h1>Hello</h1>
         <p>Please fill out the form below</p>
-        <form action="/pemweb/index.html">
-            <table style="text-align: left; margin-left: 50%; transform: translateX(-50%); ">
-                <tr>
-                    <td>Nama Lengkap </td>
-                    <td>: </td>
-                    <td><input type="text" required placeholder="e.g: John Dow"></td>
-                </tr>
-                <tr>
-                    <td>Username </td>
-                    <td>: </td>
-                    <td><input type="text" required placeholder="e.g: JohnD123"></td>
-                </tr>
-                <tr>
-                    <td>Email </td>
-                    <td>: </td>
-                    <td><input type="text" required placeholder="e.g: john@mail.com"></td>
-                </tr>
-                <tr>
-                    <td>Password </td>
-                    <td>: </td>
-                    <td><input type="password" required placeholder="create strong password!"></td>
-                </tr>
-                <tr>
-                    <td>Foto Diri </td>
-                    <td>: </td>
-                    <td><input type="file"></td>
-                </tr>
-            </table>
+        <form action="/pemweb/index.html" class="form">
+            <div class="field">
+                <input type="text" required placeholder="Full Name | e.g: John Dow">
+                <input type="text" required placeholder="Email | e.g: john@mail.com"></input>
+                <input type="text" required placeholder="Username| e.g: john123"></input>
+                <input type="password" required placeholder="Password | Create Strong Password"></input>
+                <div>
+                    <label for="file">Self Pict</label>
+                    <input type="file" id="file" required></input>
+                </div>
+            </div>
+
+
             <button type="submit">Register</button>
-            <p>Already have an account? <a href="./index.html">Login</a></p>
+            <p>Already have an account? <a href="./index.html" id="toRegist">Login</a></p>
         </form>
+        </div>
 
     </div>
 </body>
